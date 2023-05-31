@@ -28,6 +28,7 @@ header{
 
 main{
   margin: 1rem 7rem 2rem 7rem;
+  min-height: 62.4vh;
 }
 
 p{
@@ -38,6 +39,19 @@ p{
 
 h2{
   margin-top: 1.5rem;
+}
+
+img{
+  height: 16rem;
+  width: 25rem;
+}
+
+#top-10-words{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
 }
 
 footer{
