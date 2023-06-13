@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="../imagens/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="../styles/duvida.css">
+  <script src="../scripts/duvida.js" defer></script>
   <title>Cibersegurança</title>
 </head>
 <body>
@@ -14,13 +15,13 @@
     <h3>Mande sua dúvida</h3>
   </header>
   <main>
-    <form action="mailto: edsonbaierle@gmail.com" method="post" enctype="text/plain"> 
-      <label for="name">Seu Nome: </label>
+    <form id="myForm">
+      <label for="name">Seu Nome:</label>
       <input type="text" id="name" name="name" required autocomplete="off">
-      <label for="emai">Seu E-mail: </label>
-      <input type="email" id="emai" emai="emai" required>
-      <textarea name="mensagem" id="" cols="30" rows="10" required></textarea>
-      <input type="submit" value="Enviar">
+      <label for="email">Seu E-mail:</label>
+      <input type="email" id="email" name="email" required>
+      <textarea name="mensagem" id="mensagem" cols="30" rows="10" required></textarea>
+      <input type="submit" value="Enviar" onclick="prepareEmail(event)">
       <input type="reset" value="Limpar">
     </form>
   </main>
